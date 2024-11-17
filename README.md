@@ -1,17 +1,17 @@
 README.md
 
-py_decorators >> main.py \n
-requirements.txt \n
+py_decorators >> main.py <br />
+requirements.txt <br />
 
-Dockerfile = \n
-FROM python:3.7-alpine
-WORKDIR /service
-COPY requirements.txt .
-RUN apk add curl
-RUN pip install -r requirements.txt
-COPY . ./
-EXPOSE 5000
-ENTRYPOINT ["python", "main.py"]
+Dockerfile = <br />
+FROM python:3.7-alpine <br />
+WORKDIR /service <br />
+COPY requirements.txt . <br />
+RUN apk add curl <br />
+RUN pip install -r requirements.txt <br />
+COPY . ./ <br />
+EXPOSE 5000 <br />
+ENTRYPOINT ["python", "main.py"] <br />
 
-docker build -t simple_decorators -f Dockerfile .
-docker run -it simple_decorators
+docker build -t simple_decorators -f Dockerfile . <br />
+docker run -it simple_decorators <br />
