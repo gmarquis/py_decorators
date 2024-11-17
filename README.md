@@ -1,9 +1,9 @@
 README.md
 
-py_decorators >> main.py
-requirements.txt
+py_decorators >> main.py \n
+requirements.txt \n
 
-Dockerfile =
+Dockerfile = \n
 FROM python:3.7-alpine
 WORKDIR /service
 COPY requirements.txt .
